@@ -19,7 +19,7 @@ const Result = ({ vehicles, fuel }) => {
     }, [ vehicles ]);
 
     useEffect(() => {
-        if(result.length > 0) {
+        if(vehicles.length > 0) {
             if (selectedFuelType !== 'none') {
                 setResult(vehicles.filter( (item) => {
                     return item.fuelType ===  selectedFuelType;
@@ -28,7 +28,7 @@ const Result = ({ vehicles, fuel }) => {
                 setResult(vehicles);
             }
         };  
-    }, [ selectedFuelType ]);
+    }, [ selectedFuelType, vehicles]);
 
     const handleLoadMore = () => {
         setNumber(number + 9);

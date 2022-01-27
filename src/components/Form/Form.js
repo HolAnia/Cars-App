@@ -45,7 +45,7 @@ const Form  = () => {
             .then (res => {
                 setModels(res.data);
                 if( res.data.length === 0) {
-                    setErrorMessage(`Sorry we don't have models in this make, choose diferent make`);
+                    setErrorMessage(`Sorry we don't have models in this make, choose different make`);
                 } else {
                     setErrorMessage('');
                 }   
@@ -66,7 +66,7 @@ const Form  = () => {
             .then(res => {
                 setVehicles(res.data);
                 if( res.data.length === 0 ) {
-                    setErrorMessage(`Sorry we don't have car with this model, choose diferent model`)
+                    setErrorMessage(`Sorry we don't have car with this model, choose different model`)
                 } else {
                     setErrorMessage('')
                 }
@@ -121,10 +121,10 @@ const Form  = () => {
             {
                 loaded ? 
                 <FormWrapper>
-                    <FormTitle>What you are looking for?</FormTitle>
+                    <FormTitle>What are you looking for?</FormTitle>
                     <SelectWrapper>
                     <StyledSelect name = 'makes' id = 'makes' onChange = { handleChoosenMake } >
-                        <option value="none" >choose make that you are intrested in</option>
+                        <option value="none" >choose make</option>
                         {
                             makes.map((make, id) => {
                                 return(
@@ -136,7 +136,7 @@ const Form  = () => {
                     {
                         models.length > 0 &&
                         <StyledSelect name = 'models' id = 'models' onChange = { handleChoosenModel }>
-                            <option value = 'none'>choose model that you are intrested in</option>
+                            <option value = 'none'>choose model</option>
                             { models.map((model, id) => {
                                 return (
                                     <option key= {id} value = {getValueName(model)}>{ model }</option>

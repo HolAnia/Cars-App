@@ -8,7 +8,7 @@ const VehicleCard = ({ make, model, bodyType, engineCapacity, enginePowerKW, eng
                 <CardTitle className = 'cardTitle' >{ make } { model }</CardTitle>
             </CardHeader>
             <CardContent>
-                <VehicleSubtitle>Information about car:</VehicleSubtitle>
+                <VehicleSubtitle>Car details:</VehicleSubtitle>
                 <InfoWrapper>
                     <Logo url = {require('../../images/car.png')} />
                     <VehicleTextInfo className = 'bodyType' >Body type: { bodyType }</VehicleTextInfo>   

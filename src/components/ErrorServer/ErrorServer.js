@@ -5,8 +5,8 @@ const ErrorServer = () => {
     return (
         <ErrorWrapper>
             <SadFace url = {require("../../images/sad.png")}/>
-            <ErrorText>Ups!!! Something went wrong :( </ErrorText>
-            <ErrorText>please refresh your browser</ErrorText>
+            <ErrorText>Ups!!! Something went wrong</ErrorText>
+            <ErrorText>Please refresh your browser</ErrorText>
         </ErrorWrapper>
     )
 };

@@ -1,14 +1,14 @@
 # Cars App
 
-## General information:
+## General information
 
 This project has been created as a recruitment task to Friday Technology Company.
 
-This application has following functionality: reviewing and filtering available cars from database.
+This application has following functionality: reviewing and filtering cars available in database.
 
 Data for the app are fetched from [Cars API](https://www.dropbox.com/s/i3bjhj90ccbtf1w/friday-code-challenge.zip?dl=0&file_subpath=%2Fapiserver).
 
-## Technologies used:
+## Technologies used
 
 - React 
 - styled-components 
